@@ -36,6 +36,7 @@ jobs:
     - name: Clone lastest source code
       run: |
          git clone https://github.com/srcrs/BilibiliTask.git ./taskcode
+         cp -f Request.java ./taskcode/src/main/java/top/srcrs/util
     - name: Build with Gradle
       working-directory: ./taskcode
       env:
